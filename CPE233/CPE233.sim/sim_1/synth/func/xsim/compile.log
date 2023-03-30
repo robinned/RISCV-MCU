@@ -1,0 +1,34 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.sim/sim_1/synth/func/xsim/WRAPPER_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN
+INFO: [VRFC 10-311] analyzing module CU_FSM
+INFO: [VRFC 10-311] analyzing module CathodeDriver
+INFO: [VRFC 10-311] analyzing module Memory
+INFO: [VRFC 10-311] analyzing module OTTER_MCU
+INFO: [VRFC 10-311] analyzing module OTTER_Wrapper
+INFO: [VRFC 10-311] analyzing module PC
+INFO: [VRFC 10-311] analyzing module SevSegDisp
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/BRANCH_ADDR_GEN_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_ADDR_GEN_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/PC_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module PC_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/ProgROM_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ProgROM_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/REG_FILE_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module REG_FILE_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/ALU_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module ALU_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/IMMED_GEN_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module IMMED_GEN_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/BRANCH_COND_GEN_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module BRANCH_COND_GEN_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/CU_FSM_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_FSM_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/CU_DCDR_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module CU_DCDR_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/OTTER_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module OTTER_tb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/WRAPPER_tb.sv" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module WRAPPER_tb

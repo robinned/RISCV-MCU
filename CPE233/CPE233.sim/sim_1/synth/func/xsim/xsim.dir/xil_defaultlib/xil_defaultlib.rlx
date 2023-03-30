@@ -1,0 +1,16 @@
+0.7
+2020.2
+Oct 14 2022
+05:07:14
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.sim/sim_1/synth/func/xsim/WRAPPER_tb_func_synth.v,1677952235,verilog,,,,ALU;BRANCH_ADDR_GEN;BRANCH_COND_GEN;CU_FSM;CathodeDriver;Memory;OTTER_MCU;OTTER_Wrapper;PC;SevSegDisp;glbl,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/ALU_tb.sv,1675562040,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/IMMED_GEN_tb.sv,,ALU_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/BRANCH_ADDR_GEN_tb.sv,1676969187,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/PC_tb.sv,,BRANCH_ADDR_GEN_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/BRANCH_COND_GEN_tb.sv,1676966450,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/CU_FSM_tb.sv,,BRANCH_COND_GEN_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/CU_DCDR_tb.sv,1677865827,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/OTTER_tb.sv,,CU_DCDR_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/CU_FSM_tb.sv,1677863792,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/CU_DCDR_tb.sv,,CU_FSM_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/IMMED_GEN_tb.sv,1675672385,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/BRANCH_COND_GEN_tb.sv,,IMMED_GEN_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/OTTER_tb.sv,1677868062,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/WRAPPER_tb.sv,,OTTER_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/PC_tb.sv,1674285671,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/ProgROM_tb.sv,,PC_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/ProgROM_tb.sv,1674235553,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/REG_FILE_tb.sv,,ProgROM_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/REG_FILE_tb.sv,1674718331,systemVerilog,,/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/ALU_tb.sv,,REG_FILE_tb,,uvm,,,,,,
+/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sim_1/new/WRAPPER_tb.sv,1677948672,systemVerilog,,,,WRAPPER_tb,,uvm,,,,,,

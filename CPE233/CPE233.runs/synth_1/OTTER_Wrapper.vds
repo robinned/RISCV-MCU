@@ -1,0 +1,522 @@
+#-----------------------------------------------------------
+# Vivado v2022.2 (64-bit)
+# SW Build 3671981 on Fri Oct 14 04:59:54 MDT 2022
+# IP Build 3669848 on Fri Oct 14 08:30:02 MDT 2022
+# Start of session at: Fri Mar 17 13:22:58 2023
+# Process ID: 146403
+# Current directory: /home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.runs/synth_1
+# Command line: vivado -log OTTER_Wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source OTTER_Wrapper.tcl
+# Log file: /home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.runs/synth_1/OTTER_Wrapper.vds
+# Journal file: /home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.runs/synth_1/vivado.jou
+# Running On: eldenaspire, OS: Linux, CPU Frequency: 3500.031 MHz, CPU Physical cores: 2, Host memory: 12411 MB
+#-----------------------------------------------------------
+source OTTER_Wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1330.082 ; gain = 0.023 ; free physical = 1606 ; free virtual = 6724
+Command: read_checkpoint -auto_incremental -incremental {/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/utils_1/imports/synth_1/PC.dcp}
+INFO: [Vivado 12-5825] Read reference checkpoint from /home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/utils_1/imports/synth_1/PC.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top OTTER_Wrapper -part xc7a35ticpg236-1L
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35ti'
+INFO: [Device 21-403] Loading part xc7a35ticpg236-1L
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 146450
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+CRITICAL WARNING: [Synth 8-9873] overwriting previous definition of module 'CathodeDriver' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:147]
+INFO: [Synth 8-9937] previous definition of design element 'CathodeDriver' is here [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/HackedCathodeDriver.sv:147]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1961.109 ; gain = 373.738 ; free physical = 819 ; free virtual = 5933
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.286; parent = 1171.804; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 2949.680; parent = 1961.113; children = 988.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'OTTER_Wrapper' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/OTTER_Wrapper_v1_02.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'OTTER_MCU' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/OTTER_MCU.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'CSR' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/CSR.sv:20]
+INFO: [Synth 8-6155] done synthesizing module 'CSR' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/CSR.sv:20]
+INFO: [Synth 8-6157] synthesizing module 'BRANCH_COND_GEN' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/BRANCH_COND_GEN.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'BRANCH_COND_GEN' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/BRANCH_COND_GEN.sv:22]
+INFO: [Synth 8-6157] synthesizing module 'BRANCH_ADDR_GEN' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/BRANCH_ADDR_GEN.sv:19]
+INFO: [Synth 8-6155] done synthesizing module 'BRANCH_ADDR_GEN' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/BRANCH_ADDR_GEN.sv:19]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/ALU.sv:17]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/ALU.sv:17]
+INFO: [Synth 8-6157] synthesizing module 'CU_DCDR' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/CU_DCDR.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'CU_DCDR' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/CU_DCDR.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'CU_FSM' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/CU_FSM.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'CU_FSM' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/CU_FSM.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'IMMED_GEN' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/IMMED_GEN.sv:14]
+INFO: [Synth 8-6155] done synthesizing module 'IMMED_GEN' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/IMMED_GEN.sv:14]
+INFO: [Synth 8-6157] synthesizing module 'REG_FILE' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/REG_FILE.sv:15]
+INFO: [Synth 8-6155] done synthesizing module 'REG_FILE' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/REG_FILE.sv:15]
+INFO: [Synth 8-6157] synthesizing module 'Memory' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/MEMORY.sv:48]
+INFO: [Synth 8-3876] $readmem data file 'otter_memory.mem' is read successfully [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/MEMORY.sv:73]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/MEMORY.sv:95]
+INFO: [Synth 8-6155] done synthesizing module 'Memory' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/MEMORY.sv:48]
+INFO: [Synth 8-6157] synthesizing module 'PC' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/PC.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/PC.sv:11]
+INFO: [Synth 8-6155] done synthesizing module 'OTTER_MCU' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/new/OTTER_MCU.sv:42]
+INFO: [Synth 8-6157] synthesizing module 'SevSegDisp' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/SevSegDisp.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'BCD' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/BCD.sv:18]
+INFO: [Synth 8-6155] done synthesizing module 'BCD' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/BCD.sv:18]
+INFO: [Synth 8-6157] synthesizing module 'CathodeDriver' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:22]
+INFO: [Synth 8-226] default block is never used [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:46]
+INFO: [Synth 8-226] default block is never used [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:49]
+INFO: [Synth 8-226] default block is never used [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:71]
+INFO: [Synth 8-226] default block is never used [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:93]
+INFO: [Synth 8-226] default block is never used [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:115]
+INFO: [Synth 8-6155] done synthesizing module 'CathodeDriver' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/CathodeDriver.sv:22]
+INFO: [Synth 8-6155] done synthesizing module 'SevSegDisp' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/SevSegDisp.sv:21]
+INFO: [Synth 8-6157] synthesizing module 'sound_out' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/sound_out.sv:23]
+INFO: [Synth 8-6155] done synthesizing module 'sound_out' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/sound_out.sv:23]
+INFO: [Synth 8-6157] synthesizing module 'debounce_one_shot' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/debounce_one_shot.sv:24]
+INFO: [Synth 8-6155] done synthesizing module 'debounce_one_shot' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/debounce_one_shot.sv:24]
+INFO: [Synth 8-6157] synthesizing module 'ADC' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:29]
+INFO: [Synth 8-6157] synthesizing module 'xadc_wiz_0' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.runs/synth_1/.Xil/Vivado-146403-eldenaspire/realtime/xadc_wiz_0_stub.v:5]
+INFO: [Synth 8-6155] done synthesizing module 'xadc_wiz_0' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.runs/synth_1/.Xil/Vivado-146403-eldenaspire/realtime/xadc_wiz_0_stub.v:5]
+WARNING: [Synth 8-7071] port 'reset_in' of module 'xadc_wiz_0' is unconnected for instance 'ADC_module' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:42]
+WARNING: [Synth 8-7071] port 'ot_out' of module 'xadc_wiz_0' is unconnected for instance 'ADC_module' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:42]
+WARNING: [Synth 8-7071] port 'vccaux_alarm_out' of module 'xadc_wiz_0' is unconnected for instance 'ADC_module' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:42]
+WARNING: [Synth 8-7071] port 'vccint_alarm_out' of module 'xadc_wiz_0' is unconnected for instance 'ADC_module' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:42]
+WARNING: [Synth 8-7071] port 'user_temp_alarm_out' of module 'xadc_wiz_0' is unconnected for instance 'ADC_module' [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:42]
+WARNING: [Synth 8-7023] instance 'ADC_module' of module 'xadc_wiz_0' has 21 connections declared, but only 16 given [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:42]
+INFO: [Synth 8-6155] done synthesizing module 'ADC' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/ADC/XADC.sv:29]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/OTTER_Wrapper_v1_02.sv:121]
+INFO: [Synth 8-6155] done synthesizing module 'OTTER_Wrapper' (0#1) [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/OTTER_Wrapper_v1_02.sv:17]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2045.078 ; gain = 457.707 ; free physical = 899 ; free virtual = 6014
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.286; parent = 1171.804; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3033.648; parent = 2045.082; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2053.984 ; gain = 466.613 ; free physical = 899 ; free virtual = 6014
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.286; parent = 1171.804; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3042.555; parent = 2053.988; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:08 . Memory (MB): peak = 2053.984 ; gain = 466.613 ; free physical = 899 ; free virtual = 6014
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1383.286; parent = 1171.804; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3042.555; parent = 2053.988; children = 988.566
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2053.984 ; gain = 0.000 ; free physical = 895 ; free virtual = 6010
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'ADC/ADC_module'
+Finished Parsing XDC File [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.gen/sources_1/ip/xadc_wiz_0/xadc_wiz_0/xadc_wiz_0_in_context.xdc] for cell 'ADC/ADC_module'
+Parsing XDC File [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/OTTER_Wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/OTTER_Wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.719 ; gain = 0.000 ; free physical = 811 ; free virtual = 5926
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2179.719 ; gain = 0.000 ; free physical = 811 ; free virtual = 5926
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-11241] undeclared symbol 'REGCCE', assumed default net type 'wire' [/Vivado/Vivado/2022.2/data/verilog/src/unimacro/BRAM_SINGLE_MACRO.v:2170]
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 861 ; free virtual = 5977
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1393.243; parent = 1181.771; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35ticpg236-1L
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 861 ; free virtual = 5977
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1393.243; parent = 1181.771; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for ADC/ADC_module. (constraint file  auto generated constraint).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 861 ; free virtual = 5977
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1393.243; parent = 1181.771; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'CU_FSM'
+INFO: [Synth 8-802] inferred FSM for state register 'PS_reg' in module 'debounce_one_shot'
+WARNING: [Synth 8-3936] Found unconnected internal register 'sound_ctrl_reg' and it is trimmed from '16' to '2' bits. [/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.srcs/sources_1/imports/Downloads/OTTER_Wrapper_v1_02.sv:85]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                    INIT |                            00001 | 00000000000000000000000000000000
+                   FETCH |                            00010 | 00000000000000000000000000000001
+                    EXEC |                            00100 | 00000000000000000000000000000010
+               WRITEBACK |                            01000 | 00000000000000000000000000000011
+               INTERRUPT |                            10000 | 00000000000000000000000000000100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'one-hot' in module 'CU_FSM'
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "Memory:/memory_reg"
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 ST_init |                              000 | 00000000000000000000000000000000
+              ST_BTN_low |                              001 | 00000000000000000000000000000001
+      ST_BTN_low_to_high |                              010 | 00000000000000000000000000000010
+             ST_BTN_high |                              011 | 00000000000000000000000000000011
+      ST_BTN_high_to_low |                              100 | 00000000000000000000000000000100
+             ST_one_shot |                              101 | 00000000000000000000000000000101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'PS_reg' using encoding 'sequential' in module 'debounce_one_shot'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:17 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 855 ; free virtual = 5971
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1393.243; parent = 1181.771; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   32 Bit       Adders := 6     
+	   3 Input   32 Bit       Adders := 1     
+	   2 Input   20 Bit       Adders := 1     
+	   2 Input   11 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 2     
+	   2 Input    4 Bit       Adders := 34    
+	   2 Input    3 Bit       Adders := 7     
+	   2 Input    2 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               16 Bit    Registers := 2     
+	               12 Bit    Registers := 1     
+	               11 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---RAMs : 
+	             512K Bit	(16384 X 32 bit)          RAMs := 1     
+	             156K Bit	(40000 X 4 bit)          RAMs := 1     
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 1     
+	   2 Input   32 Bit        Muxes := 10    
+	   4 Input   32 Bit        Muxes := 3     
+	   9 Input   32 Bit        Muxes := 2     
+	  16 Input   32 Bit        Muxes := 1     
+	   2 Input   16 Bit        Muxes := 2     
+	   5 Input   16 Bit        Muxes := 1     
+	  19 Input    8 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 2     
+	   5 Input    5 Bit        Muxes := 1     
+	   2 Input    5 Bit        Muxes := 3     
+	   2 Input    4 Bit        Muxes := 32    
+	   4 Input    4 Bit        Muxes := 2     
+	  10 Input    4 Bit        Muxes := 1     
+	   2 Input    3 Bit        Muxes := 21    
+	   4 Input    3 Bit        Muxes := 2     
+	  10 Input    3 Bit        Muxes := 2     
+	   6 Input    3 Bit        Muxes := 2     
+	   5 Input    3 Bit        Muxes := 1     
+	   2 Input    2 Bit        Muxes := 2     
+	   4 Input    2 Bit        Muxes := 2     
+	  10 Input    2 Bit        Muxes := 2     
+	   6 Input    1 Bit        Muxes := 7     
+	   4 Input    1 Bit        Muxes := 4     
+	   2 Input    1 Bit        Muxes := 29    
+	   5 Input    1 Bit        Muxes := 5     
+	   9 Input    1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+INFO: [Synth 8-7030] Implemented Non-Cascaded Block Ram (cascade_height = 1) of width 32 for RAM "CPU/MEM/memory_reg"
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:52 ; elapsed = 00:00:54 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 799 ; free virtual = 5922
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1492.794; parent = 1281.351; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Preliminary Mapping Report (see note below)
++--------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|CPU           | MEM/memory_reg      | 16 K x 32(READ_FIRST)  | W | R | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
+|OTTER_Wrapper | SOUND/audio_reg_reg | 39 K x 4(READ_FIRST)   | W |   | 39 K x 4(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++--------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
+
+Distributed RAM: Preliminary Mapping Report (see note below)
++------------+---------------+-----------+----------------------+--------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------+-----------+----------------------+--------------+
+|CPU         | RF/regMem_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+---------------+-----------+----------------------+--------------+
+
+Note: The table above is a preliminary report that shows the Distributed RAMs at the current stage of the synthesis flow. Some Distributed RAMs may be reimplemented as non Distributed RAM primitives later in the synthesis flow. Multiple instantiated RAMs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:58 ; elapsed = 00:01:01 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 695 ; free virtual = 5818
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1497.086; parent = 1285.646; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:59 ; elapsed = 00:01:01 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 693 ; free virtual = 5816
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1498.285; parent = 1286.846; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+
+Block RAM: Final Mapping Report
++--------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|Module Name   | RTL Object          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | 
++--------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+|CPU           | MEM/memory_reg      | 16 K x 32(READ_FIRST)  | W | R | 16 K x 32(WRITE_FIRST) |   | R | Port A and B     | 0      | 16     | 
+|OTTER_Wrapper | SOUND/audio_reg_reg | 39 K x 4(READ_FIRST)   | W |   | 39 K x 4(WRITE_FIRST)  |   | R | Port A and B     | 0      | 8      | 
++--------------+---------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+
+
+
+Distributed RAM: Final Mapping Report
++------------+---------------+-----------+----------------------+--------------+
+|Module Name | RTL Object    | Inference | Size (Depth x Width) | Primitives   | 
++------------+---------------+-----------+----------------------+--------------+
+|CPU         | RF/regMem_reg | Implied   | 32 x 32              | RAM32M x 12  | 
++------------+---------------+-----------+----------------------+--------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP, Shift Register and Retiming Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'SOUND/audio_reg_reg_0_2' (RAMB36E1_5) to 'SOUND/audio_reg_reg_0_0'
+INFO: [Synth 8-223] decloning instance 'SOUND/audio_reg_reg_1_2' (RAMB36E1_6) to 'SOUND/audio_reg_reg_1_0'
+INFO: [Synth 8-223] decloning instance 'SOUND/audio_reg_reg_0_3' (RAMB36E1_5) to 'SOUND/audio_reg_reg_0_1'
+INFO: [Synth 8-223] decloning instance 'SOUND/audio_reg_reg_1_3' (RAMB36E1_6) to 'SOUND/audio_reg_reg_1_1'
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_2 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_3 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_4 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_5 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_6 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_7 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_8 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_9 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_10 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_11 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_12 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_13 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_14 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance CPU/MEM/memory_reg_bram_15 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SOUND/audio_reg_reg_1_0 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance SOUND/audio_reg_reg_1_1 (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:01:00 ; elapsed = 00:01:02 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 687 ; free virtual = 5810
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1502.969; parent = 1291.529; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-4442] BlackBox module \ADC/ADC_module  has unconnected pin reset_in
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 682 ; free virtual = 5805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1503.266; parent = 1291.826; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:05 ; elapsed = 00:01:07 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 682 ; free virtual = 5805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1503.281; parent = 1291.842; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 682 ; free virtual = 5805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1503.570; parent = 1292.131; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 682 ; free virtual = 5805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1503.633; parent = 1292.193; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 682 ; free virtual = 5805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1503.637; parent = 1292.197; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 682 ; free virtual = 5805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1503.637; parent = 1292.197; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+--------------+----------+
+|      |BlackBox name |Instances |
++------+--------------+----------+
+|1     |xadc_wiz_0    |         1|
++------+--------------+----------+
+
+Report Cell Usage: 
++------+---------+------+
+|      |Cell     |Count |
++------+---------+------+
+|1     |xadc_wiz |     1|
+|2     |BUFG     |     3|
+|3     |CARRY4   |    85|
+|4     |LUT1     |    15|
+|5     |LUT2     |   172|
+|6     |LUT3     |   135|
+|7     |LUT4     |   220|
+|8     |LUT5     |   285|
+|9     |LUT6     |   959|
+|10    |MUXF7    |   158|
+|11    |MUXF8    |    59|
+|12    |RAM32M   |    10|
+|13    |RAM32X1D |     4|
+|14    |RAMB36E1 |    20|
+|21    |FDCE     |     4|
+|22    |FDPE     |     1|
+|23    |FDRE     |   330|
+|24    |FDSE     |     4|
+|25    |IBUF     |    22|
+|26    |OBUF     |    32|
++------+---------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 2179.719 ; gain = 592.348 ; free physical = 682 ; free virtual = 5805
+Synthesis current peak Physical Memory [PSS] (MB): peak = 1503.637; parent = 1292.197; children = 211.482
+Synthesis current peak Virtual Memory [VSS] (MB): peak = 3168.289; parent = 2179.723; children = 988.566
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 1 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:06 . Memory (MB): peak = 2179.719 ; gain = 466.613 ; free physical = 726 ; free virtual = 5849
+Synthesis Optimization Complete : Time (s): cpu = 00:01:05 ; elapsed = 00:01:08 . Memory (MB): peak = 2179.727 ; gain = 592.348 ; free physical = 726 ; free virtual = 5849
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2179.727 ; gain = 0.000 ; free physical = 842 ; free virtual = 5965
+INFO: [Netlist 29-17] Analyzing 336 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2179.727 ; gain = 0.000 ; free physical = 785 ; free virtual = 5908
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 14 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 10 instances
+  RAM32X1D => RAM32X1D (RAMD32(x2)): 4 instances
+
+Synth Design complete, checksum: bea439f
+INFO: [Common 17-83] Releasing license: Synthesis
+144 Infos, 8 Warnings, 2 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:14 ; elapsed = 00:01:14 . Memory (MB): peak = 2179.727 ; gain = 849.645 ; free physical = 985 ; free virtual = 6108
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+INFO: [Common 17-1381] The checkpoint '/home/ecrobin/Desktop/CPE 233 notes/CPE233/CPE233.runs/synth_1/OTTER_Wrapper.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file OTTER_Wrapper_utilization_synth.rpt -pb OTTER_Wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Mar 17 13:24:23 2023...

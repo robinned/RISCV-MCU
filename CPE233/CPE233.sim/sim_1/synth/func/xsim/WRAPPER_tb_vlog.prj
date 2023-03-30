@@ -1,0 +1,19 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  \
+"WRAPPER_tb_func_synth.v" \
+
+sv xil_defaultlib  \
+"../../../../../CPE233.srcs/sim_1/new/BRANCH_ADDR_GEN_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/PC_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/ProgROM_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/REG_FILE_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/ALU_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/IMMED_GEN_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/BRANCH_COND_GEN_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/CU_FSM_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/CU_DCDR_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/OTTER_tb.sv" \
+"../../../../../CPE233.srcs/sim_1/new/WRAPPER_tb.sv" \
+
+# Do not sort compile order
+nosort

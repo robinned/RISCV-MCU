@@ -1,0 +1,1 @@
+--incr --debug "typical" --relax --mt "8" -L "xil_defaultlib" -L "uvm" -L "unisims_ver" -L "secureip" --snapshot "WRAPPER_tb_func_synth" "xil_defaultlib.WRAPPER_tb" "xil_defaultlib.glbl" -log "elaborate.log" 
